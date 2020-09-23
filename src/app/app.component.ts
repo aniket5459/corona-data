@@ -10,7 +10,7 @@ export class AppComponent {
   data:any;
   constructor(private coronaData : DataService){}
 
-  ngOnInIt(){
+  ngOnInit(){
   this.coronaData.getData().subscribe((result)=>{
     console.log("result",result)
     this.data=result
